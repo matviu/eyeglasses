@@ -9,7 +9,7 @@ var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var server = require("browser-sync");
+var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 
@@ -31,7 +31,7 @@ gulp.task("style", function() {
     .pipe(minify())
     .pipe(rename("styles.min.css"))
     .pipe(gulp.dest("build/css"))
-    .pipe(server.reload({stream: true}));
+    .pipe(server.reload({stream: true}))
 });
 
 gulp.task("images", function() {
@@ -45,12 +45,14 @@ gulp.task("images", function() {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build"
+    server: {
+      baseDir: "build/"
+    }
   });
 
   gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html", ["copy"]);
-  gulp.watch("js/**/*.js", ["copy"]);
+  gulp.watch("*.html", ["copy-html"]);
+  gulp.watch("js/**/*.js", ["copy-js"]);
 });
 
 gulp.task("copy", function() {
@@ -63,11 +65,31 @@ gulp.task("copy", function() {
     base: "."
   })
   .pipe(gulp.dest("build"))
-  .pipe(server.reload({stream: true}));
+  .pipe(server.reload({stream: true}))
+});
+
+gulp.task("copy-html", function() {
+  return gulp.src([
+    "*.html"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"))
+  .pipe(server.reload({stream: true}))
+});
+
+gulp.task("copy-js", function() {
+  return gulp.src([
+    "js/**"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"))
+  .pipe(server.reload({stream: true}))
 });
 
 gulp.task("clean", function() {
-  return del("build");
+  return del("build/**/*");
 });
 
 gulp.task("build", function(fn) {

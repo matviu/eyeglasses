@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/styles.min.css">
+  <script src="js/javascript.js" defer></script>
 
-  <script src="js/javascript.js" async></script>
+  <link rel="stylesheet" href="css/styles.min.css">
 
   <title>eyeglasses shop - main</title>
 </head>
 <body>
   <section class="topline">
-    <div class="container">
+    <div class="container topline__inner-wrapper">
+
       <section class="language">
         <span>Language:</span>
         <select name="site-language">
@@ -50,10 +51,10 @@
   </section>
 
   <header class="page-header">
-    <div class="container">
+    <div class="container page-header__inner-wrapper">
 
       <div class="page-header__logo-container">
-        <span class="page-header__logo">LEO SHOP</span>
+        <a class="page-header__logo" href="index.html">LEO SHOP</a>
       </div>
 
       <nav class="main-nav">
@@ -78,13 +79,13 @@
 
       <section class="search">
         <form class="search__form" action="#" method="get">
-          <input class="textfield" name="search" type="text">
+          <input class="textfield search-field" name="search" type="text" placeholder="Search..">
         </form>
       </section>
 
       <section class="cart">
-        <a href="#" class="cart__discount-icon"></a>
-        <a href="#" class="cart__cart-icon"></a>
+        <a href="#" class="cart__icon cart__icon_discount"></a>
+        <a href="#" class="cart__icon cart__icon_cart"></a>
         cart (<span class="cart__count">0</span>)
       </section>
 
@@ -92,14 +93,29 @@
   </header>
 
   <section class="promo-slider">
-    <div class="container">
+    <div class="promo-slider__slide">
+      <img class="promo-slider__slide-photo" src="img/promo-slider-1.jpg" alt="slide-1">
+      <span class="promo-slider__title1">Aluminium club</span>
+      <span class="promo-slider__title2">Expirience ray-ban</span>
+    </div>
+    <div class="promo-slider__slide">
+      <img class="promo-slider__slide-photo" src="img/promo-slider-2.jpg" alt="slide-1">
+      <span class="promo-slider__title1">Platinum club</span>
+      <span class="promo-slider__title2">Expirience tor-ran</span>
+    </div>
+    <div class="promo-slider__slide">
+      <img class="promo-slider__slide-photo" src="img/promo-slider-3.jpg" alt="slide-1">
+      <span class="promo-slider__title1"> Golden club </span>
+      <span class="promo-slider__title2"> true hype </span>
+    </div>
+    <div class="container promo-slider__inner-wrapper">
       <button class="promo-slider__btn promo-slider__btn_prev"></button>
       <button class="promo-slider__btn promo-slider__btn_next"></button>
     </div>
   </section>
 
   <main class="index-main">
-    <div class="container">
+    <div class="container index-main__inner-wrapper">
 
       <section class="gallery">
         <h1 class="gallery__title">
@@ -111,8 +127,10 @@
             <img class="product__img" src="img/product-1.jpg" alt="product-photo">
           </div>
           <div class="product__info">
-            <span class="product__title">Lorem ipsum</span>
-            <span class="product__price">$388.00</span>
+            <div class="product__info-wrapper">
+              <span class="product__title">Lorem ipsum</span>
+              <span class="product__price">$388.00</span>
+            </div>
             <a href="#" class="product__in-cart"></a>
           </div>
         </section>
@@ -122,8 +140,10 @@
             <img class="product__img" src="img/product-2.jpg" alt="product-photo">
           </div>
           <div class="product__info">
-            <span class="product__title"> laboris nisi ut aliquip ex ea commodo</span>
-            <span class="product__price">$90.00</span>
+            <div class="product__info-wrapper">
+              <span class="product__title"> laboris nisi ut aliquip ex ea commodo</span>
+              <span class="product__price">$90.00</span>
+            </div>
             <a href="#" class="product__in-cart"></a>
           </div>
         </section>
@@ -133,8 +153,10 @@
             <img class="product__img" src="img/product-3.jpg" alt="product-photo">
           </div>
           <div class="product__info">
-            <span class="product__title">consequat. Duis aute irure</span>
-            <span class="product__price">$300.00</span>
+            <div class="product__info-wrapper">
+              <span class="product__title">consequat. Duis aute irure</span>
+              <span class="product__price">$300.00</span>
+            </div>
             <a href="#" class="product__in-cart"></a>
           </div>
         </section>
@@ -144,8 +166,10 @@
             <img class="product__img" src="img/product-4.jpg" alt="product-photo">
           </div>
           <div class="product__info">
-            <span class="product__title">dolor in reprehenderit</span>
-            <span class="product__price">$180.00</span>
+            <div class="product__info-wrapper">
+              <span class="product__title">dolor in reprehenderit</span>
+              <span class="product__price">$180.00</span>
+            </div>
             <a href="#" class="product__in-cart"></a>
           </div>
         </section>
@@ -155,8 +179,10 @@
             <img class="product__img" src="img/product-5.jpg" alt="product-photo">
           </div>
           <div class="product__info">
-            <span class="product__title">in voluptate velit esse cillum dolore</span>
-            <span class="product__price">$278.00</span>
+            <div class="product__info-wrapper">
+              <span class="product__title">in voluptate velit esse cillum dolore</span>
+              <span class="product__price">$278.00</span>
+            </div>
             <a href="#" class="product__in-cart"></a>
           </div>
         </section>
@@ -166,8 +192,10 @@
             <img class="product__img" src="img/product-6.jpg" alt="product-photo">
           </div>
           <div class="product__info">
-            <span class="product__title">eu fugiat nulla pariatur.</span>
-            <span class="product__price">$378.00</span>
+            <div class="product__info-wrapper">
+              <span class="product__title">eu fugiat nulla pariatur.</span>
+              <span class="product__price">$378.00</span>
+            </div>
             <a href="#" class="product__in-cart"></a>
           </div>
         </section>
@@ -335,4 +363,5 @@
   </footer>
 
 </body>
+
 </html>
