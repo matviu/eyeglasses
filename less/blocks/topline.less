@@ -12,6 +12,12 @@
   padding-bottom: 13px;
 }
 
+.topline__settings-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .language {
   margin-right: 20px;
 }
@@ -40,6 +46,7 @@ select[name="currency"] {
   padding: 0;
 
   display: flex;
+  flex-shrink: 0;
 }
 
 .userblock__item a {
@@ -76,5 +83,62 @@ select[name="currency"] {
 
   &::after {
     display: none;
+  }
+}
+
+@media @tablet-width {
+
+  .topline__inner-wrapper {
+    flex-direction: column;
+  }
+
+  .topline__settings-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .userblock {
+
+  }
+}
+
+@media @mobile-width {
+
+  .userblock {
+    flex-direction: column;
+  }
+
+  .topline__settings-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .userblock__item {
+    flex-shrink: 0;
+    margin-bottom: 20px;
+  }
+
+  .userblock__item a {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: center;
+
+    &:last-child {
+      padding-right: 10px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0px;
+      left: 0px;
+      bottom: -5px;
+
+      height: 2px;
+      background-color: rgba(255,255,255, 0.6);
+    }
   }
 }

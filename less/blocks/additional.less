@@ -1,5 +1,36 @@
 .additional {
   width: 23.0469%;
+  max-width: 233px;
+}
 
-  outline: green 1px dashed;
+.aside-item {
+  box-shadow: 0 0 3px 2px rgba(0,0,0, 0.1);
+  border-top: 4px solid #4cb1ca;
+}
+
+.aside-item__title {
+  margin-top: 0;
+  padding-top: 20px;
+  width: 100%;
+
+  font-size: 24px;
+  color: #656565;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media @tablet-width {
+
+  .additional {
+    width: 35.6771%;
+  }
+}
+
+@media @mobile-width {
+
+  .additional {
+    display: none;
+  }
+
 }

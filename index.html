@@ -13,22 +13,23 @@
 <body>
   <section class="topline">
     <div class="container topline__inner-wrapper">
+      <div class="topline__settings-wrapper">
+        <section class="language">
+          <span>Language:</span>
+          <select name="site-language">
+            <option value="english">English</option>
+            <option value="russian">Russian</option>
+          </select>
+        </section>
 
-      <section class="language">
-        <span>Language:</span>
-        <select name="site-language">
-          <option value="english">English</option>
-          <option value="russian">Russian</option>
-        </select>
-      </section>
-
-      <section class="currency">
-        <span>Currency:</span>
-        <select name="currency">
-          <option value="usd">USD</option>
-          <option value="rur">RUR</option>
-        </select>
-      </section>
+        <section class="currency">
+          <span>Currency:</span>
+          <select name="currency">
+            <option value="usd">USD</option>
+            <option value="rur">RUR</option>
+          </select>
+        </section>
+      </div>
 
       <ul class="userblock">
         <li class="userblock__item">
@@ -199,23 +200,103 @@
             <a href="#" class="product__in-cart"></a>
           </div>
         </section>
+
+        <section class="product product_1">
+          <div class="product__img-container">
+            <img class="product__img" src="img/product-1.jpg" alt="product-photo">
+          </div>
+          <div class="product__info">
+            <div class="product__info-wrapper">
+              <span class="product__title">Lorem ipsum</span>
+              <span class="product__price">$388.00</span>
+            </div>
+            <a href="#" class="product__in-cart"></a>
+          </div>
+        </section>
+
+        <section class="product product_2">
+          <div class="product__img-container">
+            <img class="product__img" src="img/product-2.jpg" alt="product-photo">
+          </div>
+          <div class="product__info">
+            <div class="product__info-wrapper">
+              <span class="product__title"> laboris nisi ut aliquip ex ea commodo</span>
+              <span class="product__price">$90.00</span>
+            </div>
+            <a href="#" class="product__in-cart"></a>
+          </div>
+        </section>
+
+        <section class="product product_3">
+          <div class="product__img-container">
+            <img class="product__img" src="img/product-3.jpg" alt="product-photo">
+          </div>
+          <div class="product__info">
+            <div class="product__info-wrapper">
+              <span class="product__title">consequat. Duis aute irure</span>
+              <span class="product__price">$300.00</span>
+            </div>
+            <a href="#" class="product__in-cart"></a>
+          </div>
+        </section>
+
+        <section class="product product_4">
+          <div class="product__img-container">
+            <img class="product__img" src="img/product-4.jpg" alt="product-photo">
+          </div>
+          <div class="product__info">
+            <div class="product__info-wrapper">
+              <span class="product__title">dolor in reprehenderit</span>
+              <span class="product__price">$180.00</span>
+            </div>
+            <a href="#" class="product__in-cart"></a>
+          </div>
+        </section>
+
+        <section class="product product_5">
+          <div class="product__img-container">
+            <img class="product__img" src="img/product-5.jpg" alt="product-photo">
+          </div>
+          <div class="product__info">
+            <div class="product__info-wrapper">
+              <span class="product__title">in voluptate velit esse cillum dolore</span>
+              <span class="product__price">$278.00</span>
+            </div>
+            <a href="#" class="product__in-cart"></a>
+          </div>
+        </section>
+
+        <section class="product product_6">
+          <div class="product__img-container">
+            <img class="product__img" src="img/product-6.jpg" alt="product-photo">
+          </div>
+          <div class="product__info">
+            <div class="product__info-wrapper">
+              <span class="product__title">eu fugiat nulla pariatur.</span>
+              <span class="product__price">$378.00</span>
+            </div>
+            <a href="#" class="product__in-cart"></a>
+          </div>
+        </section>
       </section>
 
       <aside class="additional">
         <section class="aside-item recomended">
-          <h2 class="aside-item__title recomended__title">featured glass</h2>
-          <div class="recomended__container">
-            <div class="recomended__item">
-              <img class="recomended__img" src="img/recomended-1.jpg" alt="recomended glasses">
-              <a href="#" class="recomended__btn btn">Check it out</a>
-            </div>
-            <div class="recomended__item">
-              <img class="recomended__img" src="img/recomended-2.jpg" alt="recomended glasses">
-              <a href="#" class="recomended__btn btn">Check it out</a>
-            </div>
-            <div class="recomended__item">
-              <img class="recomended__img" src="img/recomended-3.jpg" alt="recomended glasses">
-              <a href="#" class="recomended__btn btn">Check it out</a>
+          <div class="recomended__content">
+            <h2 class="aside-item__title recomended__title">featured glass</h2>
+            <div class="recomended__container">
+              <div class="recomended__item">
+                <img class="recomended__img" src="img/recomended-1.jpg" alt="recomended glasses">
+                <a href="#" class="recomended__btn btn">Check it out</a>
+              </div>
+              <div class="recomended__item">
+                <img class="recomended__img" src="img/recomended-2.jpg" alt="recomended glasses">
+                <a href="#" class="recomended__btn btn">Check it out</a>
+              </div>
+              <div class="recomended__item">
+                <img class="recomended__img" src="img/recomended-3.jpg" alt="recomended glasses">
+                <a href="#" class="recomended__btn btn">Check it out</a>
+              </div>
             </div>
           </div>
           <div class="recomended__dots">
@@ -226,7 +307,7 @@
         </section>
 
         <section class="aside-item subscribe">
-          <h2 class="aside-item__title subscribe__title">newsletters signup</h2>
+          <h2 class="aside-item__title subscribe__title">news-letters signup</h2>
           <p class="subscribe__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           <input class="textfield" type="text" name="subscribe-emil">
           <button class="subscribe__btn btn" type="button">Subscribe</button>
@@ -237,18 +318,22 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
 
-      <section class="shipping">
-        <span class="shipping__promo shipping__promo_1">
-          Free shipping on orders over $100
-        </span>
-        <span class="shipping__promo shipping__promo_2">
-          Call us! Toll free-409-8888-0099
-        </span>
-      </section>
+    <section class="shipping">
+      <div class="container shipping__inner-wrapper">
+        <div class="shipping__promo shipping__promo_1">
+          <span class="shipping__icon"></span>
+          <span class="shipping__info">Free shipping on orders over $100</span>
+        </div>
+        <div class="shipping__promo shipping__promo_2">
+          <span class="shipping__icon"></span>
+          <span class="shipping__info">Call us! Toll free-409-8888-0099</span>
+        </div>
+      </div>
+    </section>
 
-      <section class="social">
+    <section class="social">
+      <div class="container social__inner-wrapper">
 
         <section class="social-item facebook">
           <h2 class="social-item__title">
@@ -310,8 +395,8 @@
             <li class="information__item">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
             <li class="information__item">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </li>
             <li class="information__item">ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li class="information__item"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</li>
-            <li class="information__item"> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+            <li class="information__item"> Duis aute irure dolor in reprehenderit </li>
+            <li class="information__item"> pariatur. Excepteur sint occaecat </li>
           </ul>
         </section>
 
@@ -320,26 +405,28 @@
             Contact us
           </h2>
           <p class="contact-us__adress">
-            Leo Store<br>
-            Leopards media<br>
-            KVM Rpad, 4590GH<br>
-            +1 489-8888-0099<br>
-            mail@email.com
+            <span>Leo Store</span>
+            <span>Leopards media</span>
+            <span>KVM Rpad, 4590GH</span>
+            <span>+1 489-8888-0099</span>
+            <span>mail@email.com</span>
           </p>
           <div class="social-btns">
-            <a href="#" class="social-btn social-btn-go"></a>
-            <a href="#" class="social-btn social-btn-in"></a>
-            <a href="#" class="social-btn social-btn-rs"></a>
-            <a href="#" class="social-btn social-btn-fb"></a>
+            <a href="#" class="social-btn social-btn_go"></a>
+            <a href="#" class="social-btn social-btn_in"></a>
+            <a href="#" class="social-btn social-btn_rs"></a>
+            <a href="#" class="social-btn social-btn_fb"></a>
           </div>
         </section>
 
-      </section>
+      </div>
+    </section>
 
-      <section class="bottomline">
+    <section class="bottomline">
+      <div class="container bottomline__inner-wrapper">
 
         <span class="bottomline__copyright">
-          c Copyright 2013 Css Author, All Rights Reserved.
+          &#9400; Copyright 2013 Css Author, All Rights Reserved.
         </span>
 
         <ul class="addinfo">
@@ -347,19 +434,20 @@
             <a href="#">About Us</a>
           </li>
           <li class="addinfo__item">
-            <a href="#">Delivery and Returns</a>
+            <a href="#">Delivery &amp; Returns</a>
           </li>
           <li class="addinfo__item">
-            <a href="#">Terms and Conditions</a>
+            <a href="#">Terms &amp; Conditions</a>
           </li>
           <li class="addinfo__item">
             <a href="#">Contact Us</a>
           </li>
         </ul>
 
-      </section>
+      </div>
+    </section>
 
-    </div>
+
   </footer>
 
 </body>

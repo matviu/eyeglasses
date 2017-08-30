@@ -88,6 +88,16 @@ gulp.task("copy-js", function() {
   .pipe(server.reload({stream: true}))
 });
 
+gulp.task("copy-img", function() {
+  return gulp.src([
+    "img/**"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"))
+  .pipe(server.reload({stream: true}))
+});
+
 gulp.task("clean", function() {
   return del("build/**/*");
 });

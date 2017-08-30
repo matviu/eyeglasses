@@ -1,11 +1,10 @@
 .gallery {
   width: 74.2188%;
+  margin-right: 10px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  outline: green 1px dashed;
 }
 
 .gallery__title {
@@ -17,4 +16,19 @@
   text-transform: uppercase;
   colr: #635f57;
   font-weight: 100;
+}
+
+@media @tablet-width-only {
+
+  .gallery {
+    width: 64.3229%;
+  }
+}
+
+@media @mobile-width {
+
+  .gallery {
+    width: 100%;
+    margin-right: 0;
+  }
 }
