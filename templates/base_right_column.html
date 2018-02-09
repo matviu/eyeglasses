@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+
+{% block main %}
+  <div class="container index-main__inner-wrapper">
+
+  {% block content %}
+
+  {% endblock content %}
+
+    <aside class="additional">
+      <section class="aside-item recomended">
+        <div class="recomended__content">
+          <h2 class="aside-item__title recomended__title">featured glass</h2>
+          <div class="recomended__container">
+            <div class="recomended__item">
+              <img class="recomended__img" src="{{ STATIC_URL }}img/recomended-1.jpg" alt="recomended glasses">
+              <a href="#" class="recomended__btn btn">Check it out</a>
+            </div>
+            <div class="recomended__item">
+              <img class="recomended__img" src="{{ STATIC_URL }}img/recomended-2.jpg" alt="recomended glasses">
+              <a href="#" class="recomended__btn btn">Check it out</a>
+            </div>
+            <div class="recomended__item">
+              <img class="recomended__img" src="{{ STATIC_URL }}img/recomended-3.jpg" alt="recomended glasses">
+              <a href="#" class="recomended__btn btn">Check it out</a>
+            </div>
+          </div>
+        </div>
+        <div class="recomended__dots">
+          <span class="recomended__dot"></span>
+          <span class="recomended__dot"></span>
+          <span class="recomended__dot"></span>
+        </div>
+      </section>
+
+      <section class="aside-item subscribe">
+        <h2 class="aside-item__title subscribe__title">news-letters signup</h2>
+        <p class="subscribe__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+        <input class="textfield" type="text" name="subscribe-emil">
+        <button class="subscribe__btn btn" type="button">Subscribe</button>
+      </section>
+    </aside>
+
+  </div>
+{% endblock main %}
+

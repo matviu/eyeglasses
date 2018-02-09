@@ -1,0 +1,190 @@
+{% extends 'pages/base.html' %}
+
+
+{% block promo_slider %}
+	<section class="promo-slider">
+	  <div class="promo-slider__slide">
+	    <img class="promo-slider__slide-photo" src="{{ STATIC_URL }}img/promo-slider-1.jpg" alt="slide-1">
+	    <span class="promo-slider__title1">Aluminium club</span>
+	    <span class="promo-slider__title2">Expirience ray-ban</span>
+	  </div>
+	  <div class="promo-slider__slide">
+	    <img class="promo-slider__slide-photo" src="{{ STATIC_URL }}img/promo-slider-2.jpg" alt="slide-1">
+	    <span class="promo-slider__title1">Platinum club</span>
+	    <span class="promo-slider__title2">Expirience tor-ran</span>
+	  </div>
+	  <div class="promo-slider__slide">
+	    <img class="promo-slider__slide-photo" src="{{ STATIC_URL }}img/promo-slider-3.jpg" alt="slide-1">
+	    <span class="promo-slider__title1"> Golden club </span>
+	    <span class="promo-slider__title2"> true hype </span>
+	  </div>
+	  <div class="container promo-slider__inner-wrapper">
+	    <button class="promo-slider__btn promo-slider__btn_prev"></button>
+	    <button class="promo-slider__btn promo-slider__btn_next"></button>
+	  </div>
+	</section>
+{% endblock promo_slider %}
+
+{% block content %}
+	 <section class="gallery">
+      <h1 class="gallery__title">
+        featured products
+      </h1>
+
+      <section class="product product_1">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-1.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">Lorem ipsum</span>
+            <span class="product__price">$388.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_2">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-2.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title"> laboris nisi ut aliquip ex ea commodo</span>
+            <span class="product__price">$90.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_3">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-3.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">consequat. Duis aute irure</span>
+            <span class="product__price">$300.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_4">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-4.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">dolor in reprehenderit</span>
+            <span class="product__price">$180.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_5">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-5.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">in voluptate velit esse cillum dolore</span>
+            <span class="product__price">$278.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_6">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-6.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">eu fugiat nulla pariatur.</span>
+            <span class="product__price">$378.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_1">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-1.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">Lorem ipsum</span>
+            <span class="product__price">$388.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_2">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-2.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title"> laboris nisi ut aliquip ex ea commodo</span>
+            <span class="product__price">$90.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_3">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-3.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">consequat. Duis aute irure</span>
+            <span class="product__price">$300.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_4">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-4.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">dolor in reprehenderit</span>
+            <span class="product__price">$180.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_5">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-5.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">in voluptate velit esse cillum dolore</span>
+            <span class="product__price">$278.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+
+      <section class="product product_6">
+        <div class="product__img-container">
+          <img class="product__img" src="{{ STATIC_URL }}img/product-6.jpg" alt="product-photo">
+        </div>
+        <div class="product__info">
+          <div class="product__info-wrapper">
+            <span class="product__title">eu fugiat nulla pariatur.</span>
+            <span class="product__price">$378.00</span>
+          </div>
+          <a href="#" class="product__in-cart"></a>
+        </div>
+      </section>
+    </section>
+{% endblock content %}

@@ -1,7 +1,7 @@
 {
-  "name": "eyeglasses-shop-adaptive",
+  "name": "eyeglasses",
   "version": "1.0.0",
-  "description": "Учебный макет онлайн магазина по продаже очков. адаптивная верстка.",
+  "description": "демонстрационный интернет-магазин",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
@@ -9,21 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matviu/eyeglasses-shop-adaptive.git"
+    "url": "git+https://github.com/matviu/eyeglasses.git"
   },
   "keywords": [
     "html",
     "css/less",
     "js",
     "gulp",
-    "dadaptive"
+    "adaptive",
+    "python",
+    "django",
   ],
   "author": "Alexander Matvienko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matviu/eyeglasses-shop-adaptive/issues"
+    "url": "https://github.com/matviu/eyeglasses/issues"
   },
-  "homepage": "https://github.com/matviu/eyeglasses-shop-adaptive#readme",
+  "homepage": "https://github.com/matviu/eyeglasses#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",

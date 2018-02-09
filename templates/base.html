@@ -1,0 +1,448 @@
+{% load pages_tags %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {% block meta %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% endblock meta %}
+
+  {% block script %}
+    <script src="{{ STATIC_URL }}js/javascript.js" defer></script>
+  {% endblock script %}
+
+  {% block link %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/styles.min.css">
+    <link href="{{ STATIC_URL }}img/favicon.ico" rel="shortcut icon" type="image/x-icon" >
+  {% endblock link %}
+
+  <title>{% block page_title %}LEO SHOP - main{% endblock %}</title>
+</head>
+<body>
+  <section class="topline">
+    <div class="container topline__inner-wrapper">
+      <div class="topline__settings-wrapper">
+
+        <section class="language">
+          <span>Language:</span>
+          <select name="site-language">
+            <option value="english">English</option>
+            <option value="russian">Russian</option>
+          </select>
+        </section>
+
+        <section class="currency">
+          <span>Currency:</span>
+          <select name="currency">
+            <option value="usd">USD</option>
+            <option value="rur">RUR</option>
+          </select>
+        </section>
+
+      </div>
+
+      <ul class="userblock">
+        <li class="userblock__item">
+          <a href="#">Account</a>
+        </li>
+        <li class="userblock__item">
+          <a href="#">Wishlist</a>
+        </li>
+        <li class="userblock__item">
+          <a href="#">Checkout</a>
+        </li>
+        <li class="userblock__item">
+          <a href="#">Log in</a>
+        </li>
+        <li class="userblock__item">
+          <a href="#">Sign in</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <header class="page-header">
+    <div class="container page-header__inner-wrapper">
+
+      <div class="page-header__logo-container">
+        <a class="page-header__logo" href="index.html">LEO SHOP</a>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#">home</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">women</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">men</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">other</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">purchase</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="search">
+        <form class="search__form" action="#" method="get">
+          <input class="textfield search-field" name="search" type="text" placeholder="Search..">
+        </form>
+      </section>
+
+      <section class="cart">
+        <a href="#" class="cart__icon cart__icon_discount"></a>
+        <a href="#" class="cart__icon cart__icon_cart"></a>
+        cart (<span class="cart__count">0</span>)
+      </section>
+
+    </div>
+  </header>
+
+  {% block promo_slider %}
+  {% endblock promo_slider %}
+
+  <main class="index-main">
+    {% block main %}
+      <div class="container index-main__inner-wrapper">
+
+        <section class="gallery">
+          <h1 class="gallery__title">
+            featured products
+          </h1>
+
+          <section class="product product_1">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-1.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">Lorem ipsum</span>
+                <span class="product__price">$388.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_2">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-2.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title"> laboris nisi ut aliquip ex ea commodo</span>
+                <span class="product__price">$90.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_3">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-3.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">consequat. Duis aute irure</span>
+                <span class="product__price">$300.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_4">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-4.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">dolor in reprehenderit</span>
+                <span class="product__price">$180.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_5">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-5.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">in voluptate velit esse cillum dolore</span>
+                <span class="product__price">$278.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_6">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-6.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">eu fugiat nulla pariatur.</span>
+                <span class="product__price">$378.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_1">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-1.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">Lorem ipsum</span>
+                <span class="product__price">$388.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_2">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-2.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title"> laboris nisi ut aliquip ex ea commodo</span>
+                <span class="product__price">$90.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_3">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-3.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">consequat. Duis aute irure</span>
+                <span class="product__price">$300.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_4">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-4.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">dolor in reprehenderit</span>
+                <span class="product__price">$180.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_5">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-5.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">in voluptate velit esse cillum dolore</span>
+                <span class="product__price">$278.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+
+          <section class="product product_6">
+            <div class="product__img-container">
+              <img class="product__img" src="{{ STATIC_URL }}img/product-6.jpg" alt="product-photo">
+            </div>
+            <div class="product__info">
+              <div class="product__info-wrapper">
+                <span class="product__title">eu fugiat nulla pariatur.</span>
+                <span class="product__price">$378.00</span>
+              </div>
+              <a href="#" class="product__in-cart"></a>
+            </div>
+          </section>
+        </section>
+
+        <aside class="additional">
+          <section class="aside-item recomended">
+            <div class="recomended__content">
+              <h2 class="aside-item__title recomended__title">featured glass</h2>
+              <div class="recomended__container">
+                <div class="recomended__item">
+                  <img class="recomended__img" src="{{ STATIC_URL }}img/recomended-1.jpg" alt="recomended glasses">
+                  <a href="#" class="recomended__btn btn">Check it out</a>
+                </div>
+                <div class="recomended__item">
+                  <img class="recomended__img" src="{{ STATIC_URL }}img/recomended-2.jpg" alt="recomended glasses">
+                  <a href="#" class="recomended__btn btn">Check it out</a>
+                </div>
+                <div class="recomended__item">
+                  <img class="recomended__img" src="{{ STATIC_URL }}img/recomended-3.jpg" alt="recomended glasses">
+                  <a href="#" class="recomended__btn btn">Check it out</a>
+                </div>
+              </div>
+            </div>
+            <div class="recomended__dots">
+              <span class="recomended__dot"></span>
+              <span class="recomended__dot"></span>
+              <span class="recomended__dot"></span>
+            </div>
+          </section>
+
+          <section class="aside-item subscribe">
+            <h2 class="aside-item__title subscribe__title">news-letters signup</h2>
+            <p class="subscribe__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <input class="textfield" type="text" name="subscribe-emil">
+            <button class="subscribe__btn btn" type="button">Subscribe</button>
+          </section>
+        </aside>
+
+      </div>
+    {% endblock main %}
+  </main>
+
+  <footer class="page-footer">
+
+    <section class="shipping">
+      <div class="container shipping__inner-wrapper">
+        <div class="shipping__promo shipping__promo_1">
+          <span class="shipping__icon"></span>
+          <span class="shipping__info">Free shipping on orders over $100</span>
+        </div>
+        <div class="shipping__promo shipping__promo_2">
+          <span class="shipping__icon"></span>
+          <span class="shipping__info">Call us! Toll free-409-8888-0099</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="social">
+      <div class="container social__inner-wrapper">
+
+        <section class="social-item facebook">
+          <h2 class="social-item__title">
+            Facebook
+          </h2>
+          <span class="facebook__members-count">
+            20000 Members
+          </span>
+          <button class="facebook__like-btn" type="button"></button>
+          <div class="facebook__photo-container">
+            <div class="facebook__photo-limiter">
+              <img src="{{ STATIC_URL }}img/photo-1.jpg" alt="photo" class="facebook__photo">
+            </div>
+            <div class="facebook__photo-limiter">
+              <img src="{{ STATIC_URL }}img/photo-2.jpg" alt="photo" class="facebook__photo">
+            </div>
+            <div class="facebook__photo-limiter">
+              <img src="{{ STATIC_URL }}img/photo-3.jpg" alt="photo" class="facebook__photo">
+            </div>
+            <div class="facebook__photo-limiter">
+              <img src="{{ STATIC_URL }}img/photo-4.jpg" alt="photo" class="facebook__photo">
+            </div>
+            <div class="facebook__photo-limiter">
+              <img src="{{ STATIC_URL }}img/photo-5.jpg" alt="photo" class="facebook__photo">
+            </div>
+            <div class="facebook__photo-limiter">
+              <img src="{{ STATIC_URL }}img/photo-6.jpg" alt="photo" class="facebook__photo">
+            </div>
+            <div class="facebook__photo-limiter">
+              <img src="{{ STATIC_URL }}img/photo-7.jpg" alt="photo" class="facebook__photo">
+            </div>
+            <div class="facebook__photo-limiter">
+              <img src="{{ STATIC_URL }}img/photo-8.jpg" alt="photo" class="facebook__photo">
+            </div>
+          </div>
+          <span class="facebook__plugin">facebook Social plugin</span>
+        </section>
+
+        <section class="social-item twitter">
+          <h2 class="social-item__title">
+            From twitter
+          </h2>
+          <ul class="twitter__list">
+            <li class="twitter__item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <span>incididunt ut labore et dolore magna aliqua. Ut enim</span> ad minim veniam</a>
+            </li>
+            <li class="twitter__item">
+              <a href="#">eaque unde itaque error sapiente fugiat labore, <span>consequatur distinctio, reprehenderit blanditiis</span> laborum non delectus aperiam veritatis.</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="social-item information">
+          <h2 class="social-item__title">
+            information
+          </h2>
+          <ul class="information__list">
+            <li class="information__item">Lorem ipsum dolor sit amet</li>
+            <li class="information__item">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            <li class="information__item">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </li>
+            <li class="information__item">ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li class="information__item"> Duis aute irure dolor in reprehenderit </li>
+            <li class="information__item"> pariatur. Excepteur sint occaecat </li>
+          </ul>
+        </section>
+
+        <section class="social-item contact-us">
+          <h2 class="social-item__title">
+            Contact us
+          </h2>
+          <p class="contact-us__adress">
+            <span>Leo Store</span>
+            <span>Leopards media</span>
+            <span>KVM Rpad, 4590GH</span>
+            <span>+1 489-8888-0099</span>
+            <span>mail@email.com</span>
+          </p>
+          <div class="social-btns">
+            <a href="#" class="social-btn social-btn_go"></a>
+            <a href="#" class="social-btn social-btn_in"></a>
+            <a href="#" class="social-btn social-btn_rs"></a>
+            <a href="#" class="social-btn social-btn_fb"></a>
+          </div>
+        </section>
+
+      </div>
+    </section>
+
+    <section class="bottomline">
+      <div class="container bottomline__inner-wrapper">
+
+        <span class="bottomline__copyright">
+          &#9400; Copyright 2013 Css Author, All Rights Reserved.
+        </span>
+
+        <ul class="addinfo">
+          <li class="addinfo__item">
+            <a href="#">About Us</a>
+          </li>
+          <li class="addinfo__item">
+            <a href="#">Delivery &amp; Returns</a>
+          </li>
+          <li class="addinfo__item">
+            <a href="#">Terms &amp; Conditions</a>
+          </li>
+          <li class="addinfo__item">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+  </footer>
+
+</body>
+
+</html>
